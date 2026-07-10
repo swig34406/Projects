@@ -1,0 +1,43 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.732);
+}
+
+.button {
+    height: 9vh;
+    width: 18vw;
+    background: linear-gradient(45deg, #79C9C5, #FFE2AF,#3F9AAE);
+    font-size: 3vh;
+    color: rgb(0, 0, 0,0.8);
+    border-radius: 30px;
+
+}
+
+@keyframes move {
+    0% {
+        background-position: left bottom;
+    }
+
+    50% {
+        background-position: right top;
+    }
+
+    100% {
+        background-position: left bottom;
+    }
+}
+
+.button:hover {
+    background-size: 300% 300%;
+    animation: move 5s linear infinite;
+}
